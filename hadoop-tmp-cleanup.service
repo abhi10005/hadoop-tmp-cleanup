@@ -1,0 +1,11 @@
+[Unit]
+Description=Hadoop Temporary files cleanup for finished applications
+After=network.target
+
+
+[Service]
+ExecStart=/home/abhishek/Documents/scripts/hadoop-tmp-cleanup.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
